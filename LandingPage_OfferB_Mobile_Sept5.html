@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Concierge | Mobile</title>
+		<meta name="viewport" content="width=device-width"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+	</head>
+	<body>
+		<section class="top_bar">
+			<div class="container">
+				<div class="top_div">
+					<div class="top_div_left">
+						<div class="top_left_content">
+							<img src="images/ph-header.png">
+							<p>USA : (800) 667-7149</p>
+						</div>
+						<div class="top_left_content">
+							<img src="images/mail-header.png">
+							<p>info@conciergelevel.org</p>
+						</div>
+					</div>
+					<div class="top_div_right">
+						<div class="top_right_content">
+							<a href="#"><img src="images/g+.png"></a>
+							<a href="#"><img src="images/fb.png"></a>
+							<a href="#"><img src="images/twitter.png"></a>
+							<a href="#"><img src="images/linkedin.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container mobile_ham">
+			<div class="header" id="myHeader">
+			    <div class="logo">
+			    	<a href="#"><img src="images/logo.png"></a>
+			    </div>
+			    <div class="menu">
+			    	<div class="maindiv">
+						<div class="hamburger"></div>
+					</div>
+			    	<ul>
+			    		<li><a href="#thir">Home</a></li>
+			    		<li><a href="#sec">Why Join Us?</a></li>
+			    		<li><a href="#contact">Prices</a></li>
+			    		<li><a href="#contact">Contact Us</a></li>
+			    		<li><a href="#contact">Login</a></li>
+			    	</ul>
+			    </div> 
+			</div>
+		</div> 
+		<div class="mobile1">
+			<div class="container">
+				<h1>Let’s make it official.<br>
+					Sign up to get a<br>
+					<span>$500 credit instantly,</span><br>
+					and access our offers<br>
+					free for your<br>first 30 days.
+				</h1>
+			</div>
+			<div class="mobile1-mid">
+				<img id="girl" src="images/girl.png">
+				<p>We offer a 110% Best Price Guarantee,<br> No Blackout Dates, Travel WorldWide!</p>
+			</div>
+			<div class="container">
+				<ul class="ul">
+					<li>What You See is What You Pay… <br>Prices are final. No Addtl Taxes and Fees.</li>
+					<li>Your membership savings will be<br>displayed on the search results page!</li>
+				</ul>
+				<button>Sign Up</button>
+			</div>
+		</div>
+		<section class="nca">
+			<div class="container">
+				<div class="nca_content">
+					<div class="nca_left">
+						<p>NCA Reg. #38955885 | Florida Seller of Travel License: ST40736</p>
+					</div>
+					<div class="nca_right">
+						<img src="images/logo_white.png">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mobile2">
+			<div class="container">
+				<div class="mobile2-content">
+					<img src="images/couple1.jpg">
+					<h1>Get the Best Travel Deals on the Internet<br>
+					<span>Try simple access <br>to our platform now<br>for $9.99/month!</span>
+					</h1>
+					<p><span>Your first 30 days are free</span>, and we’ll give you a <span>$500 credit</span> to apply anywhere you like the second you’re inside!  How does it work?</p>
+					<ul>
+						<li>We give you access to offers anywhere in the world inside of our exclusive travel platform</li>
+						<li>We credit you $500 dollars to put towards any travel you book</li>
+						<li>Our proprietary system looks at real-time inventory at hotels, resorts and cruises around the world, and applies your $500 credit to allow you to travel AT COST</li>
+					</ul>
+					<p>You’ll never find offers like this anywhere else, because they can’t be listed publicly! <span>Feel free</span> to spread your travel credit out as it makes sense for you.  <span>Your membership will maintain</span> your access to our platform and our deals, and we’ll issue you a new <span>$500 credit</span> every year to keep you traveling.
+					</p>
+					<button>TRY IT NOW</button>
+				</div>			
+			</div>
+			<img style="margin-bottom: -5px;" src="images/footer.png">
+		</section> 
+		<footer id="contact"> 
+			<div class="bottom"> 
+				<div class="bottom_right">
+					<a href="#"><img src="images/facebook.png"></a>
+					<a href="#"><img src="images/gmail.png"></a>
+					<a href="#"><img src="images/vk.png"></a>
+					<a href="#"><img src="images/youtube.png"></a>
+					<a href="#"><img src="images/in.png"></a>
+					<a href="#"><img src="images/digg.png"></a>
+					<a href="#"><img src="images/last_icon.png"></a>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript"> 
+			var modal = document.getElementById('myModal'); 
+			var btn = document.getElementById("myBtn"); 
+			var span = document.getElementsByClassName("close")[0]; 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			} 
+			span.onclick = function() {
+			    modal.style.display = "none";
+			} 
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+		</script> 
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".maindiv").click(function(){
+					$(".menu ul").slideToggle();
+				});
+				$(".maindiv").on("click",function(){
+					$(".maindiv").toggleClass("active");
+				});
+			});
+		</script>  
+		<script type="text/javascript"> 
+			$('a[href*="#"]') 
+			  .not('[href="#"]')
+			  .not('[href="#0"]')
+			  .click(function(event) { 
+			    if (
+			      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+			      && 
+			      location.hostname == this.hostname
+			    ) { 
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']'); 
+			      if (target.length) { 
+			        event.preventDefault();
+			        $('html, body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000, function() { 
+			          var $target = $(target);
+			          $target.focus();
+			          if ($target.is(":focus")) {  
+			            return false;
+			          } else {
+			            $target.attr('tabindex','-1');  
+			            $target.focus();  
+			          };
+			        });
+			      }
+			    }
+			  });
+		</script>
+	</body>
+</html> 
